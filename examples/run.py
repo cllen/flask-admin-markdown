@@ -63,7 +63,7 @@ class ArticleView(ModelViewMixin,ModelView):
 admin.add_view(ArticleView(ArticleModel))
 
 # init markdown,html
-init_app(app,admin)
+init_app(app)
 
 if __name__ == '__main__':
 	app.run(debug=True)

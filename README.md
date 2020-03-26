@@ -40,7 +40,7 @@ admin = Admin(app, name='microblog', template_mode='bootstrap3')
 admin.add_view(ArticleView(ArticleModel))
 
 # init
-init_app(app,admin)
+init_app(app)
 
 if __name__ == '__main__':
 	app.run(debug=True)
