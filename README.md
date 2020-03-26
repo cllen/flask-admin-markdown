@@ -36,7 +36,7 @@ admin = Admin(app, name='microblog', template_mode='bootstrap3')
 
 # view
 class ArticleView(ModelViewMixin,ModelView):
-	pass
+	markdown_fields = ['markdown']
 
 admin.add_view(ArticleView(ArticleModel))
 
