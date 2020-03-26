@@ -31,13 +31,12 @@ db.init_app(app)
 class ArticleModel(db.Document):
 	markdown = db.StringField(max_length=9999)
 
-# admin
-admin = Admin(app, name='microblog', template_mode='bootstrap3')
-
 # view
 class ArticleView(ModelViewMixin,ModelView):
 	markdown_fields = ['markdown']
 
+# admin
+admin = Admin(app, name='microblog', template_mode='bootstrap3')
 admin.add_view(ArticleView(ArticleModel))
 
 # init
