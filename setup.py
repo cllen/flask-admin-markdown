@@ -9,7 +9,7 @@ long_description = "markdown for flask-admin"
 
 setuptools.setup(
 	name = "flask-admin-markdown",
-	version="2020.3.26.1",
+	version="2020.3.26.2",
 	auth="hxh",
 	author_email="13750192465@163.com",
 	description=long_description,
@@ -30,6 +30,7 @@ setuptools.setup(
 		"WTForms==2.2.1",
 		"Flask==0.10.1",
 		"flask_mongoengine==0.9.5",
+		"Flask_SQLAlchemy==2.4.1",
 	],
 )
 
