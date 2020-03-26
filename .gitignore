@@ -1,0 +1,4 @@
+*.pyc
+/examples/static/
+/dist/
+/flask_admin_markdown.egg-info/

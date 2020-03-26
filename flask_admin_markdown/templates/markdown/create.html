@@ -1,0 +1,36 @@
+{% extends 'admin/master.html' %}
+{% import 'markdown/lib.html' as lib with context %}
+{% from 'markdown/lib.html' import extra with context %} {# backward compatible #}
+
+
+
+{% block head %}
+  {{ super() }}
+  {{ lib.form_css() }}
+  <link rel="stylesheet" href="{{admin_view.base_fams_url}}/flask-admin-markdown-static/editormd/css/editormd.css"/>
+{% endblock %}
+
+{% block body %}
+  {% block navlinks %}
+  <ul class="nav nav-tabs">
+    <li>
+        <a href="{{ return_url }}">{{ _gettext('List') }}</a>
+    </li>
+    <li class="active">
+        <a href="javascript:void(0)">{{ _gettext('Create') }}</a>
+    </li>
+  </ul>
+  {% endblock %}
+
+  {% block create_form %}
+    {{ lib.render_form(form, return_url, extra(), form_opts) }}
+  {% endblock %}
+{% endblock %}
+
+{% block tail %}
+  {{ super() }}
+  {{ lib.form_js() }}
+
+  {{ ckeditor.load() }} <!-- 加载 CKEditor 的 JavaScript 文件，默认从 CDN 获取 -->
+  {{ ckeditor.config(name=admin_view.html_field or 'html') }}
+{% endblock %}
