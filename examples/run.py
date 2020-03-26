@@ -58,3 +58,5 @@ init_app(app)
 if __name__ == '__main__':
 	db.create_all()
 	app.run(debug=True)
+
+# done. http://127.0.0.1:5000/xxx/admin
