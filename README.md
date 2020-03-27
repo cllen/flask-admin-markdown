@@ -2,8 +2,12 @@ flask-admin-markdown
 ====================
 simple!
 
+install
+```shell
+pip install flask-admin-markdown
+```
 
-
+server
 ```python
 #coding:utf8
 import peewee
