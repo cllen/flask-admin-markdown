@@ -9,7 +9,7 @@ long_description = "markdown for flask-admin"
 
 setuptools.setup(
 	name = "flask-admin-markdown",
-	version="2020.3.26.3",
+	version="2020.3.27.1",
 	auth="hxh",
 	author_email="13750192465@163.com",
 	description=long_description,

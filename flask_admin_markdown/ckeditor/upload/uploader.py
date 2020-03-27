@@ -33,7 +33,7 @@ def mkdir(path):
 
 def init_uploader(
 	app,
-	upload_dir = 'static/uploads',
+	upload_dir = os.path.join('static', 'uploads'),#'static/uploads' # 兼容win
 	get_url = '/static/uploads/<filename>',
 	post_url = '/static/uploads/',
 	extensions = ['jpg', 'gif', 'png', 'jpeg'],

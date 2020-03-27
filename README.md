@@ -46,3 +46,6 @@ if __name__ == '__main__':
 ```
 
 done http://127.0.0.1:5000/admin
+
+CKieditor also be here.
+You can find more configuration in the examples.

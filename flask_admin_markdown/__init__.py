@@ -1,5 +1,5 @@
 # coding:utf8
-__version__ = "2020.3.26.3"
+__version__ = "2020.3.27.1"
 from .view import ModelViewMixin
 from .markdown import init_markdown
 from .ckeditor import init_ckeditor
