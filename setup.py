@@ -28,7 +28,7 @@ setuptools.setup(
 		"Flask_Admin==1.5.5",
 		"Flask_CKEditor==0.4.3",
 		"WTForms==2.2.1",
-		"Flask==0.10.1",
+		"Flask==1.0",
 		"peewee==3.13.1",
 		"wtf-peewee==3.0.0",
 	],
