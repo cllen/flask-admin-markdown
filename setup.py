@@ -24,7 +24,7 @@ setuptools.setup(
 		"Operating System :: OS Independent",
 	],
 	install_requires=[
-		"setuptools==41.0.1",
+		"setuptools==65.5.1",
 		"Flask_Admin==1.5.5",
 		"Flask_CKEditor==0.4.3",
 		"WTForms==2.2.1",
